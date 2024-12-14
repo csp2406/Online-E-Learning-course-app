@@ -1,9 +1,9 @@
-
 import React from 'react';
 import { useState } from 'react';
-import fakeData from '../../fakeData/fakeData';
-import Course from '../Course/Course';
-import Cart from '../Cart/Cart';
+import './Course.css'
+import fakeData from '../fakeData';
+import Course from './Course';
+import Cart from './Cart';
 
 const CourseInfo = () => {
     const courses = [...fakeData]
@@ -22,7 +22,7 @@ const CourseInfo = () => {
                 <div className="col-md-4">
                     <Cart cart={cart} key={cart.id}></Cart>
                 </div>
-                <div className="col-md-8">
+                <div className="col-md-8 course">
                     {
                         course.map(course => <Course course={course} addToCart={addToCart} key={course.id}></Course>)
                     }
