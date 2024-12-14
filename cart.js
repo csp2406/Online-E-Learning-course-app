@@ -22,6 +22,7 @@ const Cart = (props) => {
                 <h4 className="mr-auto p-2">Total :</h4>
                 <h6 className="text-white p-2">${totalPrice}</h6>
             </div>
+            <hr className="bg-danger"/>
         </div>
     );
 };
